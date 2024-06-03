@@ -1,0 +1,29 @@
+﻿@page "/repos"
+@inject IRepositoriesService RepoService
+@inject HttpClient Http
+
+<PageTitle>Github Repositories</PageTitle>
+
+<h3>Repositories</h3>
+
+<div class="flex-container d-flex flex-wrap">
+    @if (repos == null)
+    {
+        <p><em>Loading...</em></p>
+    }
+    else
+    {
+        @foreach (MyPortfolioRepository repo in repos)
+        {
+            <RepositoryCard Repo="repo"></RepositoryCard>
+        }
+    }
+</div>
+
+@code {
+    private List<MyPortfolioRepository>? repos;
+    protected override async Task OnInitializedAsync()
+    {
+        repos = await RepoService.GetMyRepositories();
+    }
+}
