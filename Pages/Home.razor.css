@@ -1,0 +1,39 @@
+﻿.social-icons {
+    padding: 30px;
+    background-color: #eee;
+    text-align: center;
+}
+
+.social-icons a {
+    color: #fff;
+    line-height: 30px;
+    font-size: 30px;
+    margin: 0 5px;
+    text-decoration: none;
+}
+
+    .social-icons a svg {
+        width: 1em;
+        height: 1em;
+        line-height: 30px;
+        font-size: 50px;
+        -webkit-transition: all 200ms ease-in;
+        -webkit-transform: scale(1);
+        -ms-transition: all 200ms ease-in;
+        -ms-transform: scale(1);
+        -moz-transition: all 200ms ease-in;
+        -moz-transform: scale(1);
+        transition: all 200ms ease-in;
+        transform: scale(1);
+    }
+
+    .social-icons a:hover svg {
+        -webkit-transition: all 200ms ease-in;
+        -webkit-transform: scale(1.5);
+        -ms-transition: all 200ms ease-in;
+        -ms-transform: scale(1.5);
+        -moz-transition: all 200ms ease-in;
+        -moz-transform: scale(1.5);
+        transition: all 200ms ease-in;
+        transform: scale(1.5);
+    }
