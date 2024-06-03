@@ -1,11 +1,11 @@
-name: Build, test and deploy
+name: Build, Test and deploy
 on:
   push:
     branches:
-      - main
+      - master
   pull_request:
     branches:
-      - main
+      - master
 jobs:
   deploy-to-github-pages:
     runs-on: ubuntu-latest
